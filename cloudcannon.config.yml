@@ -1,11 +1,36 @@
+# CloudCannon configuration for 柳川内科医院
+# https://cloudcannon.com/documentation/
+
+timezone: Asia/Tokyo
+
 paths:
   static: ''
-  uploads: uploads
-timezone: Asia/Tokyo
+  uploads: images
+
 markdown:
   engine: commonmark
   options: {}
+
 collections_config:
   pages:
     path: ''
+    glob: "**/*.html"
+    name: "Pages"
     icon: wysiwyg
+    _enabled_editors:
+      - visual
+      - code
+
+_editables:
+  content:
+    bold: true
+    italic: true
+    link: true
+    bulletedlist: true
+    numberedlist: true
+    horizontalrule: true
+    blockquote: true
+  text:
+    bold: true
+    italic: true
+    link: true
