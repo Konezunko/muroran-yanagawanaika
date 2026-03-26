@@ -2,9 +2,11 @@
 # https://cloudcannon.com/documentation/
 
 timezone: Asia/Tokyo
+source: ""
+output: ""
 
 paths:
-  static: ''
+  static: ""
   uploads: images
 
 markdown:
@@ -13,10 +15,12 @@ markdown:
 
 collections_config:
   pages:
-    path: ''
+    path: ""
+    url: "/[slug]/"
     glob: "**/*.html"
     name: "Pages"
     icon: wysiwyg
+    output: true
     _enabled_editors:
       - visual
       - code
